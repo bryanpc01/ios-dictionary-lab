@@ -199,8 +199,8 @@ You are also given an `encodedMessage` which contains only lowercase letters and
 var encodedMessage = "uijt nfttbhf jt ibse up sfbe"
 var decodedMessage = ""
 for character in encodedMessage {
-    for (key, value) in code where String(character) == key {
-        decodedMessage += value
+    for (key, value) in code where String(character) == value {
+        decodedMessage += key
         continue
     }
 }
